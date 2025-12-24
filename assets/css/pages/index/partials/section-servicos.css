@@ -1,0 +1,241 @@
+section.servicos {
+  align-items: center;
+  background: var(--cor-branco);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  padding: 60px 0;
+}
+
+
+.item {
+  transition-delay: .2s
+}
+
+.slide {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding: 30px 80px 110px 60px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  transition: all .3s;
+  width: 100%
+}
+
+.slide::-webkit-scrollbar {
+  display: none
+}
+
+.slide .item {
+  align-items: center;
+  background-color: #F1F3F8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 10px;
+  min-width: 300px;
+  opacity: .5;
+  padding: 40px 0 0;
+  transform: scale(1);
+  transition: all .3s;
+  width: 300px;
+  border-bottom: solid 2px var(--cor-azul);
+}
+
+.slide .item.primario {
+  margin: 0 25px;
+  opacity: 1;
+  transform: scale(1.1)
+}
+
+.slide .item .icone {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  position: relative;
+  width: 80px
+}
+
+.slide .item .icone img {
+  min-width: 30px;
+  width: 30px;
+  fill: var(--cor-preto-texto);
+  position: absolute;
+  transition: all .3s
+}
+
+.slide .item h3 {
+  font-family: var(--bold);
+  font-size: var(--f3);
+  margin: 15px 0 5px;
+  max-width: 218px
+}
+
+.slide .item h3,
+.slide .item p {
+  color: var(--cor-preto-texto);
+  line-height: 1.5;
+  text-align: center;
+  width: 100%
+}
+
+.slide .item p {
+  font-size: var(--f1);
+  font-family: var(--light);
+  max-width: 260px
+}
+
+.slide .item a {
+  align-items: center;
+  background-color: transparent;
+  border-top: 0.1px solid #0000006c;
+  color: var(--cor-preto-texto);
+  display: flex;
+  font-family: var(--bold);
+  font-size: var(--f2);
+  height: 60px;
+  justify-content: center;
+  margin: 30px 0 0;
+  transition: all .3s;
+  width: 100%
+}
+
+.slide .item a svg {
+  min-width: 15px;
+  width: 15px;
+  fill: var(--cor-preto-texto);
+  margin: 0 5px 0 0
+}
+
+.slide .item button:hover {
+  opacity: .6
+}
+
+.itens {
+  transform: translateY(50px)
+}
+
+.itens.animado,
+.titulo.animado {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+img.divisor-preto {
+  position: absolute;
+  width: 700px;
+  right: 0;
+  bottom: -2px;
+}
+
+.titulo-novo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 60px 20px;
+  width: 100%;
+}
+
+.titulo-novo .texto {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px;
+}
+
+.titulo-novo .texto h2 {
+  color: var(--cor-preto-texto);
+  font-family: var(--semibold);
+  font-size: var(--f6);
+  max-width: 500px;
+}
+
+.titulo-novo .texto p {
+  font-family: var(--light);
+  font-size: var(--f3);
+  color: var(--cor-preto-texto);
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+  max-width: 650px;
+}
+
+.titulo-novo .botoes {
+  align-items: center;
+  display: flex;
+  gap: 15px
+}
+
+.titulo-novo .botoes button {
+  align-items: center;
+  background-color: var(--cor-preto-texto);
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  transition: all .3s ease;
+  width: 60px;
+  z-index: 2;
+}
+
+.titulo-novo .botoes button svg {
+  height: 20px;
+  width: 20px;
+  fill: var(--cor-branco);
+  transition: all .3s
+}
+
+.titulo-novo .botoes button.voltar-servicos svg {
+  transform: rotate(180deg)
+}
+
+@media screen and (max-width: 768px) {
+
+  section.servicos{
+    padding: 0;
+  }
+
+  .titulo-novo {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 60px 30px 30px;
+  }
+
+  .titulo-novo .texto h2 {
+    font-size: var(--f5)
+  }
+
+  .titulo-novo .texto p {
+    font-size: var(--f2);
+    margin: 10px 0 0 0;
+    font-family: var(--light);
+  }
+
+  .titulo-novo .botoes {
+    display: none;
+  }
+  .slide {
+    padding: 0 20px 140px 10px
+  }
+
+  .slide .item {
+    margin: 0 8px;
+    min-width: 290px;
+    opacity: 1;
+    width: 290px
+  }
+
+  .slide .item.primario {
+    margin: 0 8px;
+    transform: scale(1)
+  }
+}

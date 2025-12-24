@@ -1,0 +1,25 @@
+/* Personaliza a cor do scroll da página */
+html {
+  scrollbar-color: #EB3135 #ffffff;
+  scrollbar-width: thin;
+}
+* {
+  scrollbar-color: #EB3135 #ffffff;
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar-track {
+  background-color: #EDF6FC;
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #EB3135, #ffffff);
+  background: -webkit-linear-gradient(90deg, #EB3135, #ffffff);
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+}

@@ -1,0 +1,39 @@
+section.faixa {
+    align-items: center;
+    background: var(--cor-vermelho);
+    display: flex;
+    justify-content: center;
+    padding: 15px 80px;
+    width: 100%
+}
+
+section.faixa p {
+    color: var(--cor-branco);
+    font-family: var(--light);
+    font-size: var(--f2);
+    text-align: center
+}
+
+section.faixa img {
+    max-width: 30px;
+    width: 100%;
+    fill: var(--cor-branco);
+    margin: 0 10px 0 0
+}
+
+@media screen and (max-width: 1000px) {
+    section.faixa {
+        align-items:flex-start;
+        padding: 15px 25px
+    }
+
+    section.faixa p {
+        line-height: 1.5;
+        text-align: left
+    }
+
+    section.faixa img {
+        margin: 5px 10px 0 0;
+        max-width: 25px
+    }
+}

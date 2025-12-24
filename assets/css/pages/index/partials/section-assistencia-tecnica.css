@@ -1,0 +1,125 @@
+section.assistencia-tecnica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--cor-branco);
+    overflow: hidden
+}
+
+.nome {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 450px;
+    padding: 40px 20px 40px 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.nome h2 span {
+    font-family: var(--bold);
+    color: var(--cor-azul);
+}
+
+.nome h2 {
+    font-family: var(--light);
+    color: var(--cor-preto-texto);
+    font-size: var(--f5);
+}
+
+.nome .sombra {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    right: -190px;
+    background: linear-gradient(90deg, #fff, #ffffff00)
+}
+
+.slide-assistencia {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: calc(100% - 150px);
+    overflow: hidden;
+    z-index: 1
+}
+
+.slide-assistencia .conteudo {
+    display: flex;
+    animation: scroll-906df4fa 150s linear infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-assistencia img {
+    width: 140px;
+    max-width: 140px;
+    min-width: 140px;
+    max-height: 30px;
+    margin: 0 100px 0 0
+}
+
+.slide-assistencia img.rheem {
+    width: 30px;
+    max-width: 30px;
+    min-width: 50px;
+    min-height: 50px;
+    margin: 0 100px 0 0;
+}
+
+@keyframes scroll-906df4fa {
+    0% {
+        transform: translate(0)
+    }
+
+    to {
+        transform: translate(-50%)
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section.assistencia-tecnica {
+        flex-direction: column;
+        padding: 0 0 30px
+    }
+
+    .nome {
+        width: 100%;
+        padding: 30px 30px 20px;
+        justify-content: center;
+    }
+
+    .nome .sombra {
+        display: none
+    }
+
+    .slide-assistencia{
+        width: 100%
+    }
+
+    .slide-assistencia img {
+        width: 80px;
+        max-width: 80px;
+        min-width: 80px;
+        margin: 0 40px 0 0
+    }
+
+    .slide-assistencia img.rheem {
+        width: 30px;
+        max-width: 30px;
+        min-width: 30px;
+        min-height: 30px;
+        margin: 0 40px 0 0;
+    }
+
+    @keyframes scroll-906df4fa {
+        0% {
+            transform: translate(0)
+        }
+
+        to {
+            transform: translate(-50%)
+        }
+    }
+}

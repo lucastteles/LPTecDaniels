@@ -1,0 +1,25 @@
+/* Global */
+@import '../../global/global.css';
+
+/* Partials */
+@import './partials/nav.css';
+@import './partials/section-apresentacao.css';
+@import './partials/section-servicos.css';
+@import './partials/section-slide-aquecedores.css';
+@import './partials/section-assistencia-tecnica.css';
+@import './partials/section-depoimentos.css';
+@import './partials/section-projetos.css';
+@import './partials/section-solucoes.css';
+@import './partials/section-QuemSomos.css';
+@import './partials/section-faixa.css';
+@import './partials/section-diferenciais.css';
+@import './partials/section-final.css';
+@import './partials/section-pressurizadores.css';
+
+@import './partials/section-apresentacao-servicos.css';
+@import './partials/section-apresentacao-aquecedores.css';
+@import './partials/section-tabela.css';
+@import './partials/section-produtos.css';
+@import './partials/section-quadros-importancia.css';
+
+@import './partials/footer.css';

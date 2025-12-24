@@ -1,0 +1,171 @@
+/* 
+<section class="final"> 
+*/
+section.final {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: var(--cor-preto);
+  padding: 80px 80px 80px 80px;
+}
+
+section.final.dois {
+  padding: 80px;
+}
+
+section.final.animar .texto {
+  animation: textofinal 1s ease-in-out;
+}
+
+@keyframes textofinal {
+  0% {
+    opacity: 0;
+  }
+}
+
+section.final .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section.final .texto .tag {
+  display: flex;
+  align-items: center;
+}
+
+section.final .texto .tag img {
+  width: 100%;
+  max-width: 15px;
+  margin: 0 10px 0 0;
+}
+
+section.final .texto .tag h3 {
+  font-family: var(--light);
+  font-size: var(--f2);
+  color: var(--cor-branco);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+section.final .texto .tag h3 span {
+  font-family: var(--semibold);
+}
+
+section.final .texto h2 {
+  font-family: var(--semibold);
+  font-size: var(--f6);
+  color: var(--cor-branco);
+  line-height: 1;
+  margin: 15px 0 0 0;
+  width: 100%;
+  max-width: 700px;
+}
+
+section.final .texto a {
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-azul);
+  padding: 10px 25px 10px 10px;
+  border-radius: 8px;
+  margin: 30px 0 0 0;
+  transition: all 0.3s;
+}
+
+section.final .texto a:hover {
+  filter: brightness(110%);
+}
+
+section.final .texto a h3 {
+  font-family: var(--semibold);
+  font-size: var(--f3);
+  color: var(--cor-branco);
+  margin: 0;
+}
+
+section.final .texto a .icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--cor-branco);
+  margin: 0 10px 0 0;
+}
+
+section.final .texto a .icone img {
+  width: 100%;
+  max-width: 20px;
+}
+
+section.final .texto .botoes {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+
+section.final .texto .botoes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 0 5px;
+  padding: 0;
+}
+
+section.final .texto .botoes a img {
+  width: 25px;
+  max-width: 25px;
+  margin: 0;
+}
+
+/* 
+  Responsivo 
+  */
+@media screen and (max-width: 1000px) {
+  section.final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 30px 40px 30px;
+  }
+
+  section.final.dois {
+    padding: 60px 30px;
+  }
+
+  section.final .texto .tag img {
+    max-width: 13px;
+    margin: 0 8px 0 0;
+  }
+
+  section.final .texto .tag h3 {
+    font-size: var(--f1);
+  }
+
+  section.final .texto h2 {
+    font-size: var(--f5);
+  }
+
+  section.final .texto p {
+    font-size: var(--f2);
+    max-width: 350px;
+  }
+
+  section.final .texto a {
+    padding: 10px 35px 10px 10px;
+    margin: 15px 0 0 0;
+  }
+
+  section.final .texto a h3 {
+    font-size: var(--f2);
+  }
+}

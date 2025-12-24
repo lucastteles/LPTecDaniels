@@ -1,0 +1,258 @@
+/* 
+<section class="apresentacao"> 
+*/
+section.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--cor-gelo);
+  position: relative;
+  min-height: 100vh;
+}
+
+section.apresentacao .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 100px 60px 60px 60px;
+  width: 50%;
+}
+
+section.apresentacao .texto .tag {
+  display: flex;
+  align-items: center;
+}
+
+section.apresentacao .texto .tag img {
+  width: 100%;
+  max-width: 15px;
+  margin: 0 10px 0 0;
+}
+
+section.apresentacao .texto .tag h3 {
+  font-family: var(--semibold);
+  font-size: var(--f2);
+  color: var(--cor-preto-texto);
+}
+
+section.apresentacao .texto .tag h3 span {
+  font-family: var(--semibold);
+}
+
+section.apresentacao .texto h1 {
+  font-family: var(--semibold);
+  font-size: var(--f6);
+  color: var(--cor-preto-texto);
+  line-height: 1.2;
+  margin: 15px 0 0 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+section.apresentacao .texto h1 span {
+  color: var(--cor-vermelho);
+}
+
+section.apresentacao .texto p {
+  font-family: var(--light);
+  font-size: var(--f2);
+  color: var(--cor-preto-texto);
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+  width: 100%;
+}
+
+section.apresentacao .texto a {
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-vermelho);
+  padding: 10px 25px 10px 10px;
+  border-radius: 8px;
+  margin: 20px 0 0 0;
+  transition: all 0.3s;
+}
+
+section.apresentacao .texto a:hover {
+  filter: brightness(110%);
+}
+
+section.apresentacao .texto a h3 {
+  font-family: var(--semibold);
+  font-size: var(--f3);
+  color: var(--cor-branco);
+}
+
+section.apresentacao .texto a .icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--cor-branco);
+  margin: 0 10px 0 0;
+}
+
+section.apresentacao .texto a .icone img {
+  width: 100%;
+  max-width: 20px;
+}
+
+section.apresentacao .texto .quadrinhos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin: 30px 0 0 0;
+}
+
+section.apresentacao .texto .quadrinhos .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  background-color: var(--cor-branco);
+  border-radius: 10px;
+  border: 1px solid #CACACA;
+  width: calc(33.33% - 10px);
+}
+
+section.apresentacao .texto .quadrinhos .quadro img {
+  width: 100%;
+  max-width: 30px;
+  max-height: 30px;
+  margin: 0 0 15px 0;
+}
+
+section.apresentacao .texto .quadrinhos .quadro h3 {
+  font-family: var(--light);
+  font-size: var(--f2);
+  color: var(--cor-preto-texto);
+  line-height: 1.5;
+}
+
+section.apresentacao .imagem {
+  width: 50%;
+  position: absolute;
+  height: calc(100% - 60px);
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  transform: translateY(0);
+  z-index: 2;
+  /* width: auto; */
+  /* height: auto; */
+}
+
+section.apresentacao .imagem img.nuvem {
+
+  width: 100%;
+  max-width: 650px;
+  position: absolute;
+  top: -90px;
+  left: 0;
+  z-index: 1;
+
+}
+
+section.apresentacao img.divisor-branco {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 700px;
+  z-index: 0;
+}
+
+
+/* 
+Responsivo 
+*/
+@media screen and (max-width: 1000px) {
+  section.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section.apresentacao .texto {
+    align-items: center;
+    text-align: center;
+    padding: 90px 30px 80px 30px;
+    width: 100%;
+  }
+
+  section.apresentacao .texto .tag img {
+    max-width: 13px;
+    margin: 0 8px 0 0;
+  }
+
+  section.apresentacao .texto .tag h3 {
+    font-size: var(--f1);
+  }
+
+  section.apresentacao .texto h1 {
+    font-size: var(--f5);
+    max-width: 300px;
+  }
+
+  section.apresentacao .texto p {
+    font-size: var(--f2);
+    max-width: 350px;
+  }
+
+  section.apresentacao .texto a {
+    padding: 10px 35px 10px 10px;
+    margin: 15px 0 0 0;
+  }
+
+  section.apresentacao .texto a h3 {
+    font-size: var(--f2);
+  }
+
+  section.apresentacao .texto .quadrinhos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px 0 0 0;
+  }
+
+  section.apresentacao .texto .quadrinhos .quadro {
+    padding: 25px 15px;
+    width: calc(33.33% - 5px);
+  }
+
+  section.apresentacao .texto .quadrinhos .quadro img {
+    max-width: 25px;
+    max-height: 25px;
+  }
+
+  section.apresentacao .texto .quadrinhos .quadro h3 {
+    font-size: var(--f1);
+  }
+
+  section.apresentacao .imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  section.apresentacao .imagem img.nuvem {
+    position: relative;
+    max-width: 350px;
+    top: -120px;
+    left: 0;
+  }
+
+  section.apresentacao img.divisor-branco {
+    width: 80%;
+  }
+
+}

@@ -1,0 +1,287 @@
+/* 
+<section class="apresentacao-aquecedores"> 
+*/
+section.apresentacao-aquecedores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--cor-preto);
+  position: relative;
+  min-height: 100vh;
+}
+
+section.apresentacao-aquecedores .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 100px 60px 60px 60px;
+  width: 50%;
+}
+
+section.apresentacao-aquecedores.animar .texto {
+  animation: efeito-texto-aquecedores 1s ease-in-out;
+}
+
+@keyframes efeito-texto-aquecedores {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+section.apresentacao-aquecedores.animar .fundo {
+  animation: imagem-desce-aquecedores 1s ease-in-out;
+}
+
+@keyframes imagem-desce-aquecedores {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+section.apresentacao-aquecedores .texto h1 {
+  font-family: var(--semibold);
+  font-size: var(--f6);
+  color: var(--cor-branco);
+  line-height: 1.2;
+  margin: 15px 0 0 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+section.apresentacao-aquecedores .texto h1 span {
+  color: var(--cor-vermelho);
+}
+
+section.apresentacao-aquecedores .texto p {
+  font-family: var(--light);
+  font-size: var(--f2);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+  width: 100%;
+}
+
+section.apresentacao-aquecedores .texto a {
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-azul);
+  padding: 10px 25px 10px 10px;
+  border-radius: 8px;
+  margin: 20px 0 0 0;
+  transition: all 0.3s;
+}
+
+section.apresentacao-aquecedores .texto a:hover {
+  filter: brightness(110%);
+}
+
+section.apresentacao-aquecedores .texto a h3 {
+  font-family: var(--semibold);
+  font-size: var(--f3);
+  color: var(--cor-branco);
+}
+
+section.apresentacao-aquecedores .texto a .icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--cor-branco);
+  margin: 0 10px 0 0;
+}
+
+section.apresentacao-aquecedores .texto a .icone img {
+  width: 100%;
+  max-width: 20px;
+}
+
+section.apresentacao-aquecedores .fundo {
+  align-items: center;
+  background-position: 50%;
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  min-height: 700px;
+  overflow: hidden;
+  position: relative;
+  width: 50%
+}
+
+section.apresentacao-aquecedores .fundo .efeito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+
+section.apresentacao-aquecedores .fundo .efeito .linha {
+  position: absolute;
+  border: 2px solid var(--cor-vermelho);
+  border-radius: 50%;
+  animation: rodando linear infinite;
+}
+
+@keyframes rodando {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+section.apresentacao-aquecedores .fundo .efeito .linha.um {
+  width: 300px;
+  height: 300px;
+  animation-duration: 10s;
+  border-right: 1px solid transparent;
+}
+
+section.apresentacao-aquecedores .fundo .efeito .linha.dois {
+  width: 400px;
+  height: 400px;
+  animation-duration: 15s;
+  opacity: 0.4;
+  border-left: 1px solid transparent;
+}
+
+section.apresentacao-aquecedores .fundo .efeito .linha.tres {
+  width: 500px;
+  height: 500px;
+  animation-duration: 20s;
+  opacity: 0.2;
+  border-top: 1px solid transparent;
+}
+
+section.apresentacao-aquecedores .fundo .efeito img {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  z-index: 2
+}
+
+section.apresentacao-aquecedores img.divisor-branco {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 700px;
+  z-index: 0;
+}
+
+section.apresentacao-aquecedores .fundo .efeito {
+  position: relative;
+}
+
+section.apresentacao-aquecedores .fundo .efeito::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background: #eb532d52;
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+/* 
+Responsivo 
+*/
+@media screen and (max-width: 1000px) {
+  section.apresentacao-aquecedores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section.apresentacao-aquecedores .texto {
+    align-items: center;
+    text-align: center;
+    padding: 0px 30px 80px 30px;
+    width: 100%;
+  }
+
+  section.apresentacao-aquecedores .texto .tag img {
+    max-width: 13px;
+    margin: 0 8px 0 0;
+  }
+
+  section.apresentacao-aquecedores .texto .tag h3 {
+    font-size: var(--f1);
+  }
+
+  section.apresentacao-aquecedores .texto h1 {
+    font-size: var(--f5);
+    max-width: 300px;
+  }
+
+  section.apresentacao-aquecedores .texto p {
+    font-size: var(--f2);
+    max-width: 350px;
+  }
+
+  section.apresentacao-aquecedores .texto a {
+    padding: 10px 35px 10px 10px;
+    margin: 15px 0 0 0;
+  }
+
+  section.apresentacao-aquecedores .texto a h3 {
+    font-size: var(--f2);
+  }
+
+  section.apresentacao-aquecedores img.divisor-branco {
+    width: 80%;
+  }
+
+  section.apresentacao-aquecedores .fundo {
+    padding: 150px 0 60px 0;
+    min-height: 0;
+    width: 100%
+  }
+
+  section.apresentacao-aquecedores .fundo .efeito {
+    position: static;
+  }
+
+  section.apresentacao-aquecedores .fundo .efeito .linha.um {
+    height: 200px;
+    width: 200px;
+  }
+
+  section.apresentacao-aquecedores .fundo .efeito .linha.dois {
+    height: 400px;
+    width: 400px;
+  }
+
+  section.apresentacao-aquecedores .fundo .efeito .linha.tres {
+    height: 300px;
+    width: 300px;
+  }
+
+  section.apresentacao-aquecedores .fundo .efeito img {
+    height: 320px;
+    width: 180px;
+  }
+
+}

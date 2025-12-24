@@ -1,0 +1,241 @@
+section.solucoes {
+  align-items: flex-start;
+  background-color: var(--cor-gelo);
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 80px 0px 120px 0px;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  border-top: solid 1px #00000044;
+}
+
+section.solucoes .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 60px 60px 60px 60px;
+  width: 50%
+}
+
+section.solucoes .texto h2 {
+  color: var(--cor-preto-texto);
+  font-family: var(--semibold);
+  font-size: var(--f6);
+  line-height: 1;
+  margin: 10px 0 0;
+  max-width: 500px;
+  width: 100%
+}
+
+section.solucoes .texto p {
+  color: var(--cor-preto-texto);
+  font-family: var(--light);
+  font-size: var(--f3);
+  margin: 10px 0 0 0;
+  max-width: 500px;
+}
+
+section.solucoes .texto p strong {
+  font-weight: 600;
+}
+
+section.solucoes .texto a {
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-vermelho);
+  padding: 10px 25px 10px 10px;
+  border-radius: 8px;
+  margin: 20px 0 0 0;
+  transition: all 0.3s;
+}
+
+section.solucoes .texto a:hover {
+  filter: brightness(110%);
+}
+
+section.solucoes .texto a h3 {
+  font-family: var(--semibold);
+  font-size: var(--f3);
+  color: var(--cor-branco);
+}
+
+section.solucoes .texto a .icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--cor-branco);
+  margin: 0 10px 0 0;
+}
+
+section.solucoes .texto a .icone img {
+  width: 100%;
+  max-width: 20px;
+}
+
+section.solucoes .itens {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 60px 60px 60px 0px;
+  width: 50%;
+}
+
+section.solucoes .itens .linha {
+  background-color: var(--cor-vermelho);
+  height: calc(80% - 40px);
+  left: 50px;
+  min-width: 2px;
+  opacity: .4;
+  position: absolute;
+  width: 2px;
+  z-index: 1
+}
+
+section.solucoes .itens .item {
+  margin: 20px 0;
+  width: 100%;
+  z-index: 2
+}
+
+section.solucoes .itens .icone,
+.itens .item {
+  align-items: center;
+  display: flex
+}
+
+section.solucoes .itens .icone img {
+  max-height: 100px;
+  max-width: 100px;
+  position: absolute;
+  border-radius: 50%;
+  height: 100px;
+  justify-content: center;
+  min-width: 100px;
+  position: relative;
+}
+
+section.solucoes .itens .info {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 20px
+}
+
+section.solucoes .itens .info h3 {
+  color: var(--cor-preto);
+  font-family: var(--bold);
+  font-size: var(--f2)
+}
+
+section.solucoes .itens .info p {
+  color: var(--cor-preto-texto);
+  font-family: var(--light);
+  font-size: var(--f2);
+  line-height: 1.5;
+  margin: 5px 0 0;
+  max-width: 480px;
+}
+
+section.solucoes .itens .info p strong {
+  font-weight: 600;
+}
+
+section.solucoes img.divisor-preto {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 700px;
+  z-index: 0;
+  transform: scaleX(-1);
+}
+
+@media screen and (max-width: 768px) {
+  section.solucoes {
+    flex-direction: column;
+    padding: 40px 0 0
+  }
+
+  section.solucoes img.divisor-preto {
+    width: 80%;
+  }
+
+  section.solucoes .texto {
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  section.solucoes .texto h2 {
+    font-size: var(--f5)
+  }
+
+  section.solucoes .texto p {
+    font-size: var(--f2);
+  }
+
+  section.solucoes .texto a {
+    padding: 10px 35px 10px 10px;
+    margin: 15px 0 0 0;
+  }
+
+  section.solucoes .texto a h3 {
+    font-size: var(--f2);
+  }
+
+  section.solucoes .texto img {
+    max-width: 300px;
+    width: 100%
+  }
+
+  section.solucoes .itens {
+    max-width: 100%;
+    padding: 30px 20px 80px;
+    width: 100%;
+  }
+
+  section.solucoes .itens .linha {
+    height: calc(90% - 160px);
+    left: 70px
+  }
+
+  section.solucoes .itens .item {
+    align-items: center;
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+    z-index: 2
+  }
+
+  section.solucoes .itens .icone {
+    height: 80px;
+    min-width: 80px;
+    width: 80px
+  }
+
+  section.solucoes .itens .icone img {
+    max-height: 50px;
+    max-width: 50px;
+  }
+
+  section.solucoes .itens .info {
+    padding: 0 0 0 15px
+  }
+
+  section.solucoes .itens .info h3 {
+    font-size: var(--f2)
+  }
+
+  section.solucoes .itens .info p {
+    font-size: var(--f1)
+  }
+
+}

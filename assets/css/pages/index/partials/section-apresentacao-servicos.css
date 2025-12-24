@@ -1,0 +1,224 @@
+/* 
+<section class="apresentacao-servicos"> 
+*/
+section.apresentacao-servicos {
+  background: var(--cor-gelo);
+  min-height: 50vh;
+  overflow: hidden;
+  align-items: center;
+  background: linear-gradient(0deg, var(--cor-gelo), var(--cor-branco));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 80px 0 80px;
+  position: relative;
+  width: 100%;
+}
+
+section.apresentacao-servicos .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 100px 60px 60px 60px;
+  width: 50%;
+}
+
+section.apresentacao-servicos.animar .texto {
+  animation: efeito-texto-servicos 1s ease-in-out;
+}
+
+@keyframes efeito-texto-servicos {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section.apresentacao-servicos .texto.padding-custom {
+  padding: 30px 60px 30px 60px;
+
+}
+
+section.apresentacao-servicos .texto .tag {
+  display: flex;
+  align-items: center;
+}
+
+section.apresentacao-servicos .texto .tag img {
+  width: 100%;
+  max-width: 15px;
+  margin: 0 10px 0 0;
+}
+
+section.apresentacao-servicos .texto .tag h3 {
+  font-family: var(--semibold);
+  font-size: var(--f2);
+  color: var(--cor-preto-texto);
+}
+
+section.apresentacao-servicos .texto .tag h3 span {
+  font-family: var(--semibold);
+}
+
+section.apresentacao-servicos .texto h1 {
+  font-family: var(--semibold);
+  font-size: var(--f6);
+  color: var(--cor-preto-texto);
+  line-height: 1.2;
+  margin: 15px 0 0 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+section.apresentacao-servicos .texto h1 span {
+  color: var(--cor-vermelho);
+}
+
+section.apresentacao-servicos .texto p {
+  font-family: var(--light);
+  font-size: var(--f2);
+  color: var(--cor-preto-texto);
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+  width: 100%;
+}
+
+section.apresentacao-servicos .texto a {
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-vermelho);
+  padding: 10px 25px 10px 10px;
+  border-radius: 8px;
+  margin: 20px 0 0 0;
+  transition: all 0.3s;
+}
+
+section.apresentacao-servicos .texto a:hover {
+  filter: brightness(110%);
+}
+
+section.apresentacao-servicos .texto a h3 {
+  font-family: var(--semibold);
+  font-size: var(--f3);
+  color: var(--cor-branco);
+}
+
+section.apresentacao-servicos .texto a .icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--cor-branco);
+  margin: 0 10px 0 0;
+}
+
+section.apresentacao-servicos .texto a .icone img {
+  width: 100%;
+  max-width: 20px;
+}
+
+
+section.apresentacao-servicos img.divisor-branco {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 700px;
+  z-index: 0;
+}
+
+section.apresentacao-servicos img.detalhe.um {
+  left: -100px;
+  position: absolute;
+  top: 40%;
+  transform: rotate(-10deg);
+  width: 300px;
+  opacity: 0.5;
+}
+
+section.apresentacao-servicos img.detalhe.dois {
+  position: absolute;
+  right: -150px;
+  top: 30%;
+  transform: rotate(10deg);
+  width: 400px;
+  opacity: 0.5;
+
+}
+
+/* 
+Responsivo 
+*/
+@media screen and (max-width: 1000px) {
+  section.apresentacao-servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section.apresentacao-servicos.padding-personalizado {
+    padding: 80px 0 40px;
+
+  }
+
+  section.apresentacao-servicos .texto {
+    align-items: center;
+    text-align: center;
+    padding: 60px 30px 40px 30px;
+    width: 100%;
+  }
+
+  section.apresentacao-servicos .texto .tag img {
+    max-width: 13px;
+    margin: 0 8px 0 0;
+  }
+
+  section.apresentacao-servicos .texto .tag h3 {
+    font-size: var(--f1);
+  }
+
+  section.apresentacao-servicos .texto h1 {
+    font-size: var(--f5);
+    max-width: 300px;
+  }
+
+  section.apresentacao-servicos .texto p {
+    font-size: var(--f2);
+    max-width: 350px;
+  }
+
+  section.apresentacao-servicos .texto a {
+    padding: 10px 35px 10px 10px;
+    margin: 15px 0 0 0;
+  }
+
+  section.apresentacao-servicos .texto a h3 {
+    font-size: var(--f2);
+  }
+
+  section.apresentacao-servicos img.divisor-branco {
+    width: 80%;
+  }
+
+  section.apresentacao-servicos img.detalhe.um {
+    left: -20px;
+    top: 30px;
+    width: 100px;
+  }
+
+  section.apresentacao-servicos img.detalhe.dois {
+    bottom: -20px;
+    right: -20px;
+    top: auto;
+    width: 120px;
+  }
+
+}

@@ -1,0 +1,205 @@
+/* 
+<section class="diferenciais"> 
+*/
+section.diferenciais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 60px 60px 60px 60px;
+  background: var(--cor-gelo);
+  overflow: hidden;
+}
+
+section.diferenciais.dois {
+  padding: 60px;
+}
+
+section.diferenciais .titulo-diferenciais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+
+section.diferenciais .titulo-diferenciais h2 {
+  font-family: var(--semibold);
+  font-size: var(--f6);
+  color: var(--cor-preto);
+  line-height: 1.3;
+}
+
+section.diferenciais .titulo-diferenciais h2 span {
+  color: var(--cor-ciano);
+}
+
+section.diferenciais .titulo-diferenciais p {
+  font-family: var(--light);
+  font-size: var(--f3);
+  color: var(--cor-preto);
+  line-height: 1.5;
+  margin: 5px 0 20px 0;
+}
+
+section.diferenciais .titulo-diferenciais .linha {
+  width: 100%;
+  max-width: 500px;
+  height: 2px;
+  background-color: var(--cor-vermelho);
+}
+
+section.diferenciais .quadros-diferenciais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+section.diferenciais.animar .quadros-diferenciais .quadro {
+  animation: quadrodiferenciais 1s ease-in-out;
+}
+
+@keyframes quadrodiferenciais {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
+
+section.diferenciais .quadros-diferenciais .quadro {
+  display: flex;
+  align-items: flex-start;
+  width: calc(33.33% - 10px);
+  background-color: var(--cor-branco);
+  border: solid 1px #CFD6DA;
+  padding: 30px;
+  box-shadow: 0 5px 30px 0 #0906200c;
+  border-radius: 10px;
+  margin: 20px 0 0 0;
+}
+
+section.diferenciais .quadros-diferenciais .quadro .icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: var(--cor-branco);
+  border: solid 1px #C7AAAA;
+}
+
+section.diferenciais .quadros-diferenciais .quadro .icone img {
+  width: 100%;
+  max-width: 25px;
+}
+
+section.diferenciais .quadros-diferenciais .quadro .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 0 20px;
+}
+
+section.diferenciais .quadros-diferenciais .quadro .texto h3 {
+  font-family: var(--semibold);
+  font-size: var(--f2);
+  color: var(--cor-preto);
+}
+
+section.diferenciais .quadros-diferenciais .quadro .texto span {
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  background-color: var(--cor-ciano);
+  margin: 0 10px 0 0;
+}
+
+section.diferenciais .quadros-diferenciais .quadro .texto h4 {
+  display: flex;
+  align-items: center;
+  font-family: var(--semibold);
+  font-size: var(--f1);
+  color: var(--cor-ciano);
+  margin: 10px 0 0 0;
+}
+
+section.diferenciais .quadros-diferenciais .quadro .texto p {
+  font-family: var(--light);
+  font-size: var(--f2);
+  color: var(--cor-preto);
+  line-height: 1.5;
+  margin: 5px 0 0 0;
+}
+
+/* 
+Responsivo 
+*/
+@media screen and (max-width: 1000px) {
+  section.diferenciais {
+    padding: 50px 30px;
+  }
+
+  section.diferenciais.dois {
+    padding: 50px 30px;
+  }
+
+  section.diferenciais .titulo-diferenciais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 30px 0;
+  }
+
+  section.diferenciais .titulo-diferenciais h2 {
+    font-size: var(--f5);
+    width: 100%;
+    max-width: 300px;
+  }
+
+  section.diferenciais .titulo-diferenciais p {
+    font-size: var(--f2);
+    width: 100%;
+    max-width: 400px;
+  }
+
+  section.diferenciais .titulo-diferenciais .linha {
+    max-width: 190px;
+  }
+
+  section.diferenciais .quadros-diferenciais {
+    flex-direction: column;
+  }
+
+  section.diferenciais .quadros-diferenciais .quadro {
+    width: 100%;
+    padding: 25px;
+    margin: 0 0 20px 0;
+  }
+
+  section.diferenciais .quadros-diferenciais .quadro .icone {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+  }
+
+  section.diferenciais .quadros-diferenciais .quadro .icone img {
+    max-width: 22px;
+  }
+
+  section.diferenciais .quadros-diferenciais .quadro .texto {
+    padding: 0 0 0 15px;
+  }
+}

@@ -1,0 +1,220 @@
+section.grafico {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+section.grafico .texto {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0px 0 60px;
+    /* width: 50% */
+}
+
+section.grafico .texto h2 {
+    color: var(--cor-preto);
+    font-family: var(--semibold);
+    font-size: var(--f6);
+    line-height: 1.2;
+    max-width: 380px;
+    width: 100%
+}
+
+section.grafico .texto .grafico {
+    align-items: flex-start;
+    border: 1px solid #00000047;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 0 0;
+    max-width: 600px;
+    width: 100%
+}
+
+section.grafico .texto .grafico .linha {
+    align-items: center;
+    border-bottom: 1px solid #00000047;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    color: var(--cor-preto-texto);
+    height: 60px;
+    min-width: 600px;
+    max-width: 600px;
+}
+
+section.grafico .texto .grafico .linha:last-child {
+    border-bottom: none
+}
+
+section.grafico .texto .grafico .linha h3 {
+    color: var(--cor-preto-texto);
+    font-family: var(--semibold);
+    font-size: var(--f2);
+    width: 33.33%;
+    padding: 0 10px 0 0px;
+}
+
+section.grafico .texto .grafico .linha p {
+    align-items: center;
+    border-left: 1px solid #00000047;
+    color: var(--cor-preto-texto);
+    display: flex;
+    font-family: var(--circular-bold);
+    font-size: var(--f2);
+    height: 60px;
+    justify-content: flex-start;
+    padding: 0 10px 0 10px;
+    width: 33.33%;
+}
+
+section.grafico .fundo {
+    align-items: center;
+    background-color: var(--cor-escuro-4);
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    min-height: 700px;
+    overflow: hidden;
+    position: relative;
+    width: 50%
+}
+
+section.grafico .fundo .efeito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+
+section.grafico .fundo .efeito .linha {
+    position: absolute;
+    border: 2px solid #0099D9;
+    border-radius: 50%;
+    animation: rodando linear infinite;
+}
+
+@keyframes rodando {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section.grafico .fundo .efeito .linha.um {
+    width: 300px;
+    height: 300px;
+    animation-duration: 10s;
+    border-right: 1px solid transparent;
+}
+
+section.grafico .fundo .efeito .linha.dois {
+    width: 400px;
+    height: 400px;
+    animation-duration: 15s;
+    opacity: 0.4;
+    border-left: 1px solid transparent;
+}
+
+section.grafico .fundo .efeito .linha.tres {
+    width: 500px;
+    height: 500px;
+    animation-duration: 20s;
+    opacity: 0.2;
+    border-top: 1px solid transparent;
+
+}
+
+section.grafico .fundo .efeito img {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* height: 400px; */
+    width: 250px;
+    z-index: 2
+}
+
+@media screen and (max-width: 1000px) {
+    section.grafico {
+        flex-direction: column
+    }
+
+    section.grafico .texto {
+        padding: 50px 25px 40px;
+        width: 100%
+    }
+
+    section.grafico .texto h2 {
+        font-size: var(--f5);
+        max-width: 350px
+    }
+
+    section.grafico .texto .grafico {
+        margin: 20px 0 0
+    }
+
+    section.grafico .texto .grafico .linha {
+        padding: 0 15px;
+        min-width: 100%;
+    }
+
+    section.grafico .texto .grafico .linha:last-child {
+        border-bottom: none
+    }
+
+    section.grafico .texto .grafico .linha h3 {
+        font-size: var(--f1);
+        line-height: 1.5;
+        padding: 0 15px 0 0;
+        width: 33.33%;
+    }
+
+    section.grafico .texto .grafico .linha p {
+        font-size: var(--f1);
+        height: 60px;
+        line-height: 1.5;
+        padding: 0 0 0 15px;
+        width: 33.33%;
+    }
+
+    section.grafico .fundo {
+        height: 300px;
+        min-height: 400px;
+        width: 100%
+    }
+
+    section.grafico .fundo .efeito {
+        position: static;
+    }
+
+    section.grafico .fundo .efeito .linha.um {
+        height: 200px;
+        width: 200px;
+    }
+
+    section.grafico .fundo .efeito .linha.dois {
+        height: 400px;
+        width: 400px;
+    }
+
+    section.grafico .fundo .efeito .linha.tres {
+        height: 300px;
+        width: 300px;
+    }
+
+    section.grafico .fundo .efeito img {
+        height: 320px;
+        width: 180px;
+    }
+
+
+}

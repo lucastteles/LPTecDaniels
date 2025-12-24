@@ -1,0 +1,122 @@
+section.pressurizadores {
+    align-items: center;
+    background-color: var(--cor-branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 80px;
+    width: 100%
+}
+
+section.pressurizadores.animar {
+    animation: efeito-pressurizadores 1.2s ease-in-out;
+
+}
+
+@keyframes efeito-pressurizadores {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section.pressurizadores h2 {
+    color: var(--cor-preto);
+    font-family: var(--semibold);
+    font-size: var(--f6);
+    text-align: center
+}
+
+section.pressurizadores .itens {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+section.pressurizadores .itens a {
+    align-items: center;
+    background-color: var(--cor-gelo);
+    border: 1px solid #2a343c3d;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0;
+    transition: all .3s;
+    width: calc(24.28% - 10px)
+}
+
+section.pressurizadores .itens a:hover {
+    background-color: var(--cor-branco);
+    border: 1px solid #eb313492
+}
+
+section.pressurizadores .itens a:hover img {
+    transform: scale(1.1)
+}
+
+section.pressurizadores .itens a img {
+    margin: 0 0 20px;
+    max-width: 90px;
+    transition: all .3s;
+    width: 100%;
+    z-index: 2;
+}
+
+section.pressurizadores .itens a span {
+    background: linear-gradient(-40deg, #49636d33, #372b2700);
+    border-radius: 5px;
+    height: 100px;
+    position: absolute;
+    transform: skew(-15deg);
+    width: 100px;
+    z-index: 1;
+}
+
+
+section.pressurizadores .itens a .nome-pressurizador {
+    align-items: center;
+    border-top: 1px solid var(--cor-cinza);
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    margin-top: auto;
+    width: 100%
+}
+
+section.pressurizadores .itens a .nome-pressurizador p {
+    color: var(--cor-preto);
+    font-family: var(--light);
+    font-size: var(--f2);
+    text-align: center
+}
+
+@media screen and (max-width: 1000px) {
+    section.pressurizadores {
+        padding: 50px 0
+    }
+
+    section.pressurizadores h2 {
+        font-size: var(--f4)
+    }
+
+    section.pressurizadores .itens {
+        overflow-x: scroll;
+        padding: 0 15px 0 25px;
+        scrollbar-width: none
+    }
+
+    section.pressurizadores .itens::-webkit-scrollbar {
+        display: none
+    }
+
+    section.pressurizadores .itens a {
+        margin: 0 10px 0 0;
+        min-width: 150px;
+        width: 150px
+    }
+}
