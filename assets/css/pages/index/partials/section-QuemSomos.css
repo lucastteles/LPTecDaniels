@@ -162,6 +162,11 @@ Responsivo
     max-width: 300px;
   }
 
+  section.quem-somos .texto h2 {
+    font-size: var(--f5);
+    max-width: 300px;
+  }
+
   section.quem-somos .texto p {
     font-size: var(--f2);
     max-width: 350px;
