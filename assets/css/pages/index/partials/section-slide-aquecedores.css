@@ -83,7 +83,7 @@ section.slide-aquecedores .texto p {
 section.slide-aquecedores .texto a {
   display: flex;
   align-items: center;
-  background-color: var(--cor-azul);
+  background-color: var(--cor-verde);
   padding: 10px 25px 10px 10px;
   border-radius: 8px;
   margin: 15px 0 0 0;
