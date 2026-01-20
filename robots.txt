@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /system/
 
-Sitemap: https://tecdaniels.com.br/sitemap.xml
+Sitemap: https://www.tecdaniels.com.br/sitemap.xml
