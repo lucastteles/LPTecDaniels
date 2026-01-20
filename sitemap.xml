@@ -24,19 +24,19 @@
 
   <!-- Marcas -->
   <url>
-    <loc>https://www.tecdaniels.com.br/aquecedor-Rinnai</loc>
+    <loc>https://www.tecdaniels.com.br/aquecedor-rinnai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.tecdaniels.com.br/aquecedor-Lorenzetti</loc>
+    <loc>https://www.tecdaniels.com.br/aquecedor-lorenzetti</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.tecdaniels.com.br/aquecedor-Komeco</loc>
+    <loc>https://www.tecdaniels.com.br/aquecedor-komeco</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -55,7 +55,7 @@
   </url>
 
   <url>
-    <loc>https://www.tecdaniels.com.br/conversao-de-forno-GPL-para-GN</loc>
+    <loc>https://www.tecdaniels.com.br/conversao-de-forno-gpl-para-gn</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -91,7 +91,7 @@
   </url>
 
   <url>
-    <loc>https://www.tecdaniels.com.br/teste-de-vazamento.</loc>
+    <loc>https://www.tecdaniels.com.br/teste-de-vazamento</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
