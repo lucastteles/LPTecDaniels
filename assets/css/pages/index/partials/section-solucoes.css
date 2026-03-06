@@ -41,7 +41,7 @@ section.solucoes .texto p strong {
   font-weight: 600;
 }
 
-section.solucoes .texto a {
+section.solucoes .texto button {
   display: flex;
   align-items: center;
   background-color: var(--cor-verde);
@@ -51,17 +51,17 @@ section.solucoes .texto a {
   transition: all 0.3s;
 }
 
-section.solucoes .texto a:hover {
+section.solucoes .texto button:hover {
   filter: brightness(110%);
 }
 
-section.solucoes .texto a h3 {
+section.solucoes .texto button h3 {
   font-family: var(--semibold);
   font-size: var(--f3);
   color: var(--cor-branco);
 }
 
-section.solucoes .texto a .icone {
+section.solucoes .texto button .icone {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +72,7 @@ section.solucoes .texto a .icone {
   margin: 0 10px 0 0;
 }
 
-section.solucoes .texto a .icone img {
+section.solucoes .texto button .icone img {
   width: 100%;
   max-width: 20px;
 }
@@ -182,12 +182,12 @@ section.solucoes img.divisor-preto {
     font-size: var(--f2);
   }
 
-  section.solucoes .texto a {
+  section.solucoes .texto button {
     padding: 10px 35px 10px 10px;
     margin: 15px 0 0 0;
   }
 
-  section.solucoes .texto a h3 {
+  section.solucoes .texto button h3 {
     font-size: var(--f2);
   }
 

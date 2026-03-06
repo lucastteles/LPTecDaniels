@@ -1,0 +1,436 @@
+    .cta {
+        background: linear-gradient(180deg, var(--cor-gelo) 0, var(--cor-branco) 100%);
+        padding: 0 100px 100px
+    }
+
+    .cta,
+    .cta .container {
+        display: flex;
+        width: 100%
+    }
+
+    .cta .container {
+        margin: 0 auto;
+        max-width: 1920px
+    }
+
+    .cta .container .card {
+        background: var(--cor-preto);
+        border-radius: 32px;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        width: 100%
+    }
+
+    .cta .container .card .conteudo {
+        display: flex;
+        flex-direction: column;
+        padding: 120px 0 120px 120px;
+        position: relative;
+        width: 60%;
+        z-index: 2
+    }
+
+    .cta .container .card .conteudo .badge {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        margin: 0 0 15px
+    }
+
+    .cta .container .card .conteudo .badge svg {
+        fill: var(--cor-branco);
+        height: 14px;
+        width: 14px
+    }
+
+    .cta .container .card .conteudo .badge span {
+        color: var(--cor-branco);
+        font-family: var(--regular);
+        font-size: var(--f1)
+    }
+
+    .cta .container .card .conteudo h2 {
+        color: var(--cor-branco);
+        font-family: var(--bold);
+        font-size: var(--f11);
+        line-height: 1.2;
+        max-width: 600px;
+        width: 100%
+    }
+
+    .cta .container .card .conteudo p {
+        color: var(--cor-cinza);
+        font-family: var(--regular);
+        font-size: var(--f2);
+        line-height: 1.5;
+        margin: 15px 0;
+        max-width: 500px
+    }
+
+    .cta .container .card .conteudo .acoes {
+        display: flex;
+        gap: 16px;
+        margin: 10px 0 0
+    }
+
+    .cta .container .card .visual {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 500px;
+        position: relative;
+        width: 40%
+    }
+
+    .cta .container .card .visual .glow-bg {
+        animation: glow-pulse 4s ease-in-out infinite;
+        background: radial-gradient(circle, rgba(55, 135, 255, .15) 0, transparent 70%);
+        border-radius: 50%;
+        height: 400px;
+        position: absolute;
+        width: 400px
+    }
+
+    .cta .container .card .visual .linhas {
+        animation: rotacao-lenta 30s linear infinite;
+        height: 400px;
+        position: absolute;
+        width: 400px
+    }
+
+    .cta .container .card .visual .linhas .linha-animada {
+        animation: linha-viajando 3s linear infinite;
+        stroke-dasharray: 100 660;
+        stroke-dashoffset: 0
+    }
+
+    .cta .container .card .visual .icones-container {
+        height: 400px;
+        position: absolute;
+        width: 400px
+    }
+
+    .cta .container .card .visual .icones-container .icone-float {
+        animation: icone-aparecer .6s cubic-bezier(.34, 1.56, .64, 1) var(--delay) both, icone-flutuar 4s ease-in-out infinite var(--delay);
+        height: 48px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%) translate(var(--x), var(--y));
+        transition: all .5s cubic-bezier(.34, 1.56, .64, 1);
+        width: 48px
+    }
+
+    .cta .container .card .visual .icones-container .icone-float .icone-inner {
+        align-items: center;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background: #ffffff1a;
+        border: 1px solid hsla(0, 0%, 100%, .15);
+        border-radius: 100px;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        transition: all .4s ease;
+        width: 100%
+    }
+
+    .cta .container .card .visual .icones-container .icone-float .icone-inner svg {
+        fill: #ffffffb3;
+        height: 22px;
+        transition: all .4s ease;
+        width: 22px
+    }
+
+    .cta .container .card .visual .icones-container .icone-float .icone-glow {
+        border-radius: 20px;
+        inset: -4px;
+        opacity: 0;
+        position: absolute;
+        transition: all .4s ease
+    }
+
+    .cta .container .card .visual .icones-container .icone-float.ativo {
+        transform: translate(-50%, -50%) translate(var(--x), var(--y)) scale(1.2);
+        z-index: 10
+    }
+
+    .cta .container .card .visual .icones-container .icone-float.ativo .icone-inner {
+        background: var(--cor-branco);
+        border-color: transparent;
+        box-shadow: 0 10px 40px #0000004d
+    }
+
+    .cta .container .card .visual .icones-container .icone-float.ativo .icone-glow {
+        opacity: 1
+    }
+
+    .cta .container .card .visual .icones-container .icone-float.ativo.azul .icone-inner svg {
+        fill: var(--cor-azul)
+    }
+
+    .cta .container .card .visual .icones-container .icone-float.ativo.azul .icone-glow {
+        background: var(--cor-azul);
+        filter: blur(20px)
+    }
+
+    .cta .container .card .visual .icones-container .icone-float.ativo.roxo .icone-inner svg {
+        fill: var(--cor-roxo)
+    }
+
+    .cta .container .card .visual .icones-container .icone-float.ativo.roxo .icone-glow {
+        background: var(--cor-roxo);
+        filter: blur(20px)
+    }
+
+    .cta .container .card .visual .icones-container .icone-float.ativo.verde .icone-inner svg {
+        fill: var(--cor-verde)
+    }
+
+    .cta .container .card .visual .icones-container .icone-float.ativo.verde .icone-glow {
+        background: var(--cor-verde);
+        filter: blur(20px)
+    }
+
+    .cta .container .card .visual .icones-container .icone-float.ativo.laranja .icone-inner svg {
+        fill: var(--cor-laranja)
+    }
+
+    .cta .container .card .visual .icones-container .icone-float.ativo.laranja .icone-glow {
+        background: var(--cor-laranja);
+        filter: blur(20px)
+    }
+
+    .cta .container .card .visual .icone-destaque {
+        position: relative;
+        z-index: 20
+    }
+
+    .cta .container .card .visual .icone-destaque .destaque-bg {
+        animation: destaque-respirar 3s ease-in-out infinite;
+        background: linear-gradient(135deg, var(--cor-azul), var(--cor-roxo));
+        border-radius: 100px;
+        height: 100px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px
+    }
+
+    .cta .container .card .visual .icone-destaque .destaque-ring {
+        border: 1px solid rgba(55, 135, 255, .3);
+        border-radius: 50%;
+        left: 50%;
+        position: absolute;
+        top: 50%
+    }
+
+    .cta .container .card .visual .icone-destaque .destaque-ring.ring1 {
+        animation: ring-expandir 2.5s ease-out infinite;
+        height: 200px;
+        transform: translate(-50%, -50%);
+        width: 200px
+    }
+
+    .cta .container .card .visual .icone-destaque .destaque-ring.ring2 {
+        animation: ring-expandir 2.5s ease-out .8s infinite;
+        height: 140px;
+        transform: translate(-50%, -50%);
+        width: 140px
+    }
+
+    .cta .container .card .visual .icone-destaque .destaque-icone {
+        align-items: center;
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        position: relative;
+        width: 100px;
+        z-index: 2
+    }
+
+    .cta .container .card .visual .icone-destaque .destaque-icone svg {
+        animation: icone-trocar .4s cubic-bezier(.34, 1.56, .64, 1);
+        fill: var(--cor-branco);
+        height: 42px;
+        width: 42px
+    }
+
+    .cta .container .card .visual .energia {
+        height: 100%;
+        pointer-events: none;
+        position: absolute;
+        width: 100%
+    }
+
+    .cta .container .card .visual .energia .spark {
+        animation: spark-brilhar 2s ease-in-out infinite var(--delay);
+        background: var(--cor-azul);
+        border-radius: 50%;
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-60px);
+        width: 4px
+    }
+
+    .cta .container .card .visual .energia .spark:nth-child(2n) {
+        background: var(--cor-roxo)
+    }
+
+    .cta .container .card .visual .energia .spark:nth-child(3n) {
+        background: var(--cor-verde)
+    }
+
+    @keyframes glow-pulse {
+
+        0%,
+        to {
+            opacity: .5;
+            transform: scale(1)
+        }
+
+        50% {
+            opacity: .8;
+            transform: scale(1.1)
+        }
+    }
+
+    @keyframes rotacao-lenta {
+        0% {
+            transform: rotate(0)
+        }
+
+        to {
+            transform: rotate(1turn)
+        }
+    }
+
+    @keyframes linha-viajando {
+        0% {
+            stroke-dashoffset: 760
+        }
+
+        to {
+            stroke-dashoffset: 0
+        }
+    }
+
+    @keyframes icone-aparecer {
+        0% {
+            opacity: 0;
+            transform: translate(-50%, -50%) translate(0) scale(0)
+        }
+
+        to {
+            opacity: 1;
+            transform: translate(-50%, -50%) translate(var(--x), var(--y)) scale(1)
+        }
+    }
+
+    @keyframes icone-flutuar {
+
+        0%,
+        to {
+            transform: translate(-50%, -50%) translate(var(--x), var(--y)) translateY(0)
+        }
+
+        50% {
+            transform: translate(-50%, -50%) translate(var(--x), var(--y)) translateY(-8px)
+        }
+    }
+
+    @keyframes destaque-respirar {
+
+        0%,
+        to {
+            box-shadow: 0 20px 60px #3787ff66;
+            transform: translate(-50%, -50%) scale(1)
+        }
+
+        50% {
+            box-shadow: 0 25px 80px #3787ff80;
+            transform: translate(-50%, -50%) scale(1.05)
+        }
+    }
+
+    @keyframes ring-expandir {
+        0% {
+            opacity: .6;
+            transform: translate(-50%, -50%) scale(1)
+        }
+
+        to {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(2)
+        }
+    }
+
+    @keyframes icone-trocar {
+        0% {
+            opacity: 0;
+            transform: scale(.5) rotate(-10deg)
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1) rotate(0)
+        }
+    }
+
+    @keyframes spark-brilhar {
+
+        0%,
+        to {
+            opacity: 0;
+            transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-60px) scale(.5)
+        }
+
+        50% {
+            opacity: 1;
+            transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-80px) scale(1)
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .cta {
+            padding: 0 20px 60px
+        }
+
+        .cta .container .card {
+            align-items: center;
+            flex-direction: column-reverse;
+            justify-content: center;
+            padding: 60px 0 0
+        }
+
+        .cta .container .card .conteudo {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px 30px 80px;
+            text-align: center;
+            width: 100%
+        }
+
+        .cta .container .card .conteudo h2 {
+            font-size: var(--f10);
+            max-width: 300px
+        }
+
+        .cta .container .card .conteudo p {
+            color: var(--cor-branco);
+            font-size: var(--f2);
+            max-width: 280px
+        }
+
+        .cta .container .card .visual {
+            min-height: 300px;
+            width: 100%
+        }
+    }

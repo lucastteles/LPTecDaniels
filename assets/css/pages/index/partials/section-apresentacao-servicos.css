@@ -89,7 +89,7 @@ section.apresentacao-servicos .texto p {
   width: 100%;
 }
 
-section.apresentacao-servicos .texto a {
+section.apresentacao-servicos .texto button {
   display: flex;
   align-items: center;
   background-color: var(--cor-verde);
@@ -99,17 +99,17 @@ section.apresentacao-servicos .texto a {
   transition: all 0.3s;
 }
 
-section.apresentacao-servicos .texto a:hover {
+section.apresentacao-servicos .texto button:hover {
   filter: brightness(110%);
 }
 
-section.apresentacao-servicos .texto a h3 {
+section.apresentacao-servicos .texto button h3 {
   font-family: var(--semibold);
   font-size: var(--f3);
   color: var(--cor-branco);
 }
 
-section.apresentacao-servicos .texto a .icone {
+section.apresentacao-servicos .texto button .icone {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,7 +120,7 @@ section.apresentacao-servicos .texto a .icone {
   margin: 0 10px 0 0;
 }
 
-section.apresentacao-servicos .texto a .icone img {
+section.apresentacao-servicos .texto button .icone img {
   width: 100%;
   max-width: 20px;
 }
@@ -195,12 +195,12 @@ Responsivo
     max-width: 350px;
   }
 
-  section.apresentacao-servicos .texto a {
+  section.apresentacao-servicos .texto button {
     padding: 10px 35px 10px 10px;
     margin: 15px 0 0 0;
   }
 
-  section.apresentacao-servicos .texto a h3 {
+  section.apresentacao-servicos .texto button h3 {
     font-size: var(--f2);
   }
 

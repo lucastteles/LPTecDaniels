@@ -66,7 +66,7 @@ section.final .texto h2 {
   max-width: 700px;
 }
 
-section.final .texto a {
+section.final .texto button {
   display: flex;
   align-items: center;
   background-color: var(--cor-verde);
@@ -76,18 +76,18 @@ section.final .texto a {
   transition: all 0.3s;
 }
 
-section.final .texto a:hover {
+section.final .texto button:hover {
   filter: brightness(110%);
 }
 
-section.final .texto a h3 {
+section.final .texto button h3 {
   font-family: var(--semibold);
   font-size: var(--f3);
   color: var(--cor-branco);
   margin: 0;
 }
 
-section.final .texto a .icone {
+section.final .texto button .icone {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,7 +98,7 @@ section.final .texto a .icone {
   margin: 0 10px 0 0;
 }
 
-section.final .texto a .icone img {
+section.final .texto button .icone img {
   width: 100%;
   max-width: 20px;
 }
@@ -160,12 +160,12 @@ section.final .texto .botoes a img {
     max-width: 350px;
   }
 
-  section.final .texto a {
+  section.final .texto button {
     padding: 10px 35px 10px 10px;
     margin: 15px 0 0 0;
   }
 
-  section.final .texto a h3 {
+  section.final .texto button h3 {
     font-size: var(--f2);
   }
 }

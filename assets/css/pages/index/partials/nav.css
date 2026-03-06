@@ -52,11 +52,27 @@ nav .conteudo .opcoes a {
   transition: all 0.3s;
 }
 
+/*  */
+nav .conteudo .opcoes button {
+  display: flex;
+  align-items: center;
+  /* background-color: transparent; */
+  /* margin: 0 0 0 20px; */
+  /* transition: all 0.3s; */
+}
+
 nav .conteudo .opcoes a:hover {
   opacity: 0.5;
 }
 
 nav .conteudo .opcoes a p {
+  font-family: var(--light);
+  font-size: var(--f1);
+  color: var(--cor-preto);
+}
+
+/*  */
+nav .conteudo .opcoes button p {
   font-family: var(--light);
   font-size: var(--f1);
   color: var(--cor-preto);
@@ -68,19 +84,19 @@ nav .conteudo .opcoes a img.icone {
   margin: 0 10px 0 0;
 }
 
-nav .conteudo .opcoes a.hospedar {
+nav .conteudo .opcoes button.contato {
   background-color: var(--cor-musgo);
   padding: 13px 20px;
   border-radius: 50px;
   margin-left: auto;
 }
 
-nav .conteudo .opcoes a.hospedar:hover {
+nav .conteudo .opcoes button.contato:hover {
   background-color: var(--cor-verde);
   opacity: 1;
 }
 
-nav .conteudo .opcoes a.hospedar p {
+nav .conteudo .opcoes button.contato p {
   font-family: var(--semibold);
   color: var(--cor-branco);
 }
@@ -177,6 +193,11 @@ Responsivo
     margin: 30px 0 0 0;
   }
 
+  /*  */
+  nav .conteudo .opcoes button {
+    margin: 30px 0 0 0;
+  }
+
   nav .conteudo .opcoes a p {
     font-size: var(--f2);
     color: var(--cor-preto);
@@ -187,7 +208,7 @@ Responsivo
     max-width: 18px;
   }
 
-  nav .conteudo .opcoes a.hospedar {
+  nav .conteudo .opcoes button.contato {
     padding: 16px 20px;
     margin-left: 0;
 

@@ -63,7 +63,7 @@ section.apresentacao .texto p {
   width: 100%;
 }
 
-section.apresentacao .texto a {
+section.apresentacao .texto button {
   display: flex;
   align-items: center;
   background-color: var(--cor-verde);
@@ -73,17 +73,17 @@ section.apresentacao .texto a {
   transition: all 0.3s;
 }
 
-section.apresentacao .texto a:hover {
+section.apresentacao .texto button:hover {
   filter: brightness(110%);
 }
 
-section.apresentacao .texto a h3 {
+section.apresentacao .texto button h3 {
   font-family: var(--semibold);
   font-size: var(--f3);
   color: var(--cor-branco);
 }
 
-section.apresentacao .texto a .icone {
+section.apresentacao .texto button .icone {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,7 +94,7 @@ section.apresentacao .texto a .icone {
   margin: 0 10px 0 0;
 }
 
-section.apresentacao .texto a .icone img {
+section.apresentacao .texto button .icone img {
   width: 100%;
   max-width: 20px;
 }
@@ -205,12 +205,12 @@ Responsivo
     max-width: 350px;
   }
 
-  section.apresentacao .texto a {
+  section.apresentacao .texto button {
     padding: 10px 35px 10px 10px;
     margin: 15px 0 0 0;
   }
 
-  section.apresentacao .texto a h3 {
+  section.apresentacao .texto button h3 {
     font-size: var(--f2);
   }
 

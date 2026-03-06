@@ -78,7 +78,7 @@ section.quem-somos .texto p strong {
   font-weight: 600;
 }
 
-section.quem-somos .texto a {
+section.quem-somos .texto button {
   display: flex;
   align-items: center;
   background-color: var(--cor-verde);
@@ -88,18 +88,18 @@ section.quem-somos .texto a {
   transition: all 0.3s;
 }
 
-section.quem-somos .texto a:hover {
+section.quem-somos .texto button:hover {
   filter: brightness(110%);
 }
 
-section.quem-somos .texto a h3 {
+section.quem-somos .texto button h3 {
   font-family: var(--semibold);
   font-size: var(--f3);
   color: var(--cor-branco);
   margin: 0px;
 }
 
-section.quem-somos .texto a .icone {
+section.quem-somos .texto button .icone {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +110,7 @@ section.quem-somos .texto a .icone {
   margin: 0 10px 0 0;
 }
 
-section.quem-somos .texto a .icone img {
+section.quem-somos .texto button .icone img {
   width: 100%;
   max-width: 20px;
 }
@@ -172,12 +172,12 @@ Responsivo
     max-width: 350px;
   }
 
-  section.quem-somos .texto a {
+  section.quem-somos .texto button {
     padding: 10px 35px 10px 10px;
     margin: 15px 0 0 0;
   }
 
-  section.quem-somos .texto a h3 {
+  section.quem-somos .texto button h3 {
     font-size: var(--f2);
   }
 
