@@ -233,7 +233,7 @@
      margin: 0 20px 0 0;
  }
 
- .produto_item .conteudo a {
+ .produto_item .conteudo .btn-whatsapp-produto {
      display: flex;
      align-items: center;
      justify-content: space-between;
@@ -252,14 +252,14 @@
  }
 
 
- .produto_item .conteudo a:hover .icone {
+ .produto_item .conteudo .btn-whatsapp-produto:hover .icone {
      width: 100%;
      border-radius: 10px;
      border-left: none;
      filter: brightness(110%);
  }
 
- .produto_item .conteudo a .icone {
+ .produto_item .conteudo .btn-whatsapp-produto .icone {
      display: flex;
      align-items: center;
      justify-content: center;
@@ -273,7 +273,7 @@
      transition: all 0.5s;
  }
 
- .produto_item .conteudo a .icone img {
+ .produto_item .conteudo .btn-whatsapp-produto .icone img {
      width: 100%;
      max-width: 25px;
  }
