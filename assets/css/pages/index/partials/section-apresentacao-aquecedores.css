@@ -75,7 +75,7 @@ section.apresentacao-aquecedores .texto p {
   width: 100%;
 }
 
-section.apresentacao-aquecedores .texto a {
+section.apresentacao-aquecedores .texto button {
   display: flex;
   align-items: center;
   background-color: var(--cor-verde);
@@ -85,17 +85,17 @@ section.apresentacao-aquecedores .texto a {
   transition: all 0.3s;
 }
 
-section.apresentacao-aquecedores .texto a:hover {
+section.apresentacao-aquecedores .texto button:hover {
   filter: brightness(110%);
 }
 
-section.apresentacao-aquecedores .texto a h3 {
+section.apresentacao-aquecedores .texto button h3 {
   font-family: var(--semibold);
   font-size: var(--f3);
   color: var(--cor-branco);
 }
 
-section.apresentacao-aquecedores .texto a .icone {
+section.apresentacao-aquecedores .texto button .icone {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,7 +106,7 @@ section.apresentacao-aquecedores .texto a .icone {
   margin: 0 10px 0 0;
 }
 
-section.apresentacao-aquecedores .texto a .icone img {
+section.apresentacao-aquecedores .texto button .icone img {
   width: 100%;
   max-width: 20px;
 }
@@ -241,12 +241,12 @@ Responsivo
     max-width: 350px;
   }
 
-  section.apresentacao-aquecedores .texto a {
+  section.apresentacao-aquecedores .texto button {
     padding: 10px 35px 10px 10px;
     margin: 15px 0 0 0;
   }
 
-  section.apresentacao-aquecedores .texto a h3 {
+  section.apresentacao-aquecedores .texto button h3 {
     font-size: var(--f2);
   }
 
